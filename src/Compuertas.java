@@ -3,32 +3,29 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 
+
+
 public abstract class Compuertas{
     
-     /**
+    
+    /**
      *Almacena un entero consecutivo que se encarga de identificar a dicha compuerta.
      */
     protected int identificador;
-    
-    
     /**
      *Punto que se encarga de guardar la posicion especifica en la que se debe
      * dibujar la compuerta en una ventana grafica.
      * Almacena la posicion de la esquina superior izquierda.
      */
     public Punto pos;
-    
-    
     /**
      *ArrayList de Pin  que se encarga de almacenar los pines que corresponden
      * a dicha compuenrta.
      */
-    public ArrayList <Pin> terminales= new ArrayList();
+	public ArrayList <Pin> terminales= new ArrayList<Pin>();
     
     
     public Compuertas(){}
-    
-    
     /**
      *Constructor de Compuertas.
      * 
@@ -78,7 +75,7 @@ public abstract class Compuertas{
     
     
     /**
-     *Se encarga de revisar los valores almacenados en los pines, solicitar
+     *Se encarga de revisar los valores almacenados en los pines solicitar
      * los faltantes y evaluar dicha compuerta de acuerdo a su respectiva logica. 
      * @return Valor resultante despues de la evaluacion logica de la compuerta.
      */
@@ -109,7 +106,7 @@ public abstract class Compuertas{
     };
     
     /**
-     *Se encarga de revisar cada uno de los pines y sus valores, si algun valor
+     *Se encarga de revisar cada uno de los pines y sus valores si algun valor
      * no esta evaluado se encarga de evaluar a su respectiva compuerta y
      * asignarle el valor resultante.
      */
@@ -146,5 +143,9 @@ public abstract class Compuertas{
      */
     public abstract boolean logica(boolean a, boolean b);
     
-       
+    @Override
+    public abstract String toString();
+    
+    
+    
 }
