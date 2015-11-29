@@ -39,7 +39,6 @@ public class And extends Compuertas{
         g.drawArc(pos.x-25, pos.y, 94, 40, 0, 92);
         g.drawArc(pos.x-25, pos.y, 94, 40, 0, -92);
         g.drawString("AND "+identificador, pos.x+27, pos.y+25);
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

@@ -2,11 +2,6 @@
 
 import java.awt.Graphics;
 
-
-/**
- *
- * @author USUARIO
- */
 public class Nand extends Compuertas{
     
     /**

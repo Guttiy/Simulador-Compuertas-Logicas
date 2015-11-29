@@ -1,16 +1,6 @@
 
 import java.awt.Graphics;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author USUARIO
- */
-
 public class Entrada extends Punto{
     
 	private static final long serialVersionUID = 1L;
@@ -42,7 +32,6 @@ public class Entrada extends Punto{
         } else {
             g.drawString("1", x-18, y+5);
         }
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
