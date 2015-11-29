@@ -24,8 +24,7 @@ public class MyFrame extends javax.swing.JFrame implements ActionListener{
     private JMenuItem item10;
     private JMenuItem item11;
     private JMenuItem item12;
-    private JMenuItem item13;
-    private JMenuItem item14;    
+    private JMenuItem item13;    
     private JMenuBar bar;
     public MyFrame(){
     this.setSize(new Dimension (830,520));
@@ -55,7 +54,6 @@ public class MyFrame extends javax.swing.JFrame implements ActionListener{
         item11 = new JMenuItem ("GUARDAR");
         item12 = new JMenuItem ("ABRIR");
         item13 = new JMenuItem ("MULTI");
-        item14 = new JMenuItem ("LIMPIAR");
         menu.add(item1);
         menu.add(item2);
         menu.add(item3);
@@ -71,7 +69,6 @@ public class MyFrame extends javax.swing.JFrame implements ActionListener{
         bar.add(item10);
         bar.add(item11);
         bar.add(item12);
-        bar.add(item14);
         this.setJMenuBar(bar);
         item1.addActionListener (this);
         item2.addActionListener (this);
@@ -86,7 +83,6 @@ public class MyFrame extends javax.swing.JFrame implements ActionListener{
         item11.addActionListener (this);
         item12.addActionListener (this);
         item13.addActionListener (this);
-        item14.addActionListener (this);
         jPanel1.addMouseListener(jPanel1);
         jPanel1.addMouseMotionListener(jPanel1);
         pack();
@@ -139,12 +135,7 @@ public class MyFrame extends javax.swing.JFrame implements ActionListener{
                                                 }else{
                                                 if(e.getSource()==item13){
                                                     MyPanel.figpaint= 9;
-                                                }else{
-                                                    if(e.getSource()==item14){
-                                                        MyPanel.leer("Limpio.txt");
-                                                        MyPanel.disponible();
-                                                    }
-                                            }
+                                                }
                                         }
                                     }
                                 }
